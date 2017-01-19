@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: Service
+metadata: {
+    "kind" : "Service",
+    "apiVersion" : "v1",
+    "metadata" : {
+        "name": "my-service"
+     },
+    "spec": {
+        "type": "LoadBalance",
+        "clusterIP": "10.0.171.239",
+        "selector": {
+            "app": "MyApp"
+        },
+        "ports": [
+            {
+                "protocol": "TCP",
+                "port": 80,
+                "targetPort": 9376,
+                "nodePort": 30061
+            }
+        ],
+    },
+    "status": {
+        "loadBalancer": {
+            "ingress": [
+                {
+                    "ip": "192.168.1.130"
+                }
+            ]
+        }
+    }
+}
