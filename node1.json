@@ -1,0 +1,17 @@
+{
+	"node": {
+		"key": "/coreos.com/network/subnets",
+		{
+			"key": "/coreos.com/network/subnets/18.16.29.0-24",
+			"value": "{\"PublicIP\":\"192.168.122.77\",\"BackendType\":\"vxlan\",\"BackendData\":{\"VtepMAC\":\"46:f1:d0:18:d0:65\"}}"
+		},
+		{
+			"key": "/coreos.com/network/subnets/18.16.83.0-24",
+			"value": "{\"PublicIP\":\"192.168.122.36\",\"BackendType\":\"vxlan\",\"BackendData\":{\"VtepMAC\":\"ca:38:78:fc:72:29\"}}"
+		},
+		{
+			"key": "/coreos.com/network/subnets/18.16.90.0-24",
+			"value": "{\"PublicIP\":\"192.168.122.127\",\"BackendType\":\"vxlan\",\"BackendData\":{\"VtepMAC\":\"92:e2:80:ba:2d:4d\"}}"
+		}
+	}
+}
